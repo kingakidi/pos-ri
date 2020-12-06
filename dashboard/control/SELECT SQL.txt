@@ -1,0 +1,15 @@
+$sql = "SELECT * \n"
+
+    . "FROM signup \n"
+
+    . "INNER JOIN profile\n"
+
+    . "	  ON signup.userid = profile.userid\n"
+
+    . "INNER JOIN ci\n"
+
+    . "      ON signup.userid=ci.userid\n"
+
+    . "INNER JOIN co\n"
+
+    . "	  ON ci.id=co.ciid";
